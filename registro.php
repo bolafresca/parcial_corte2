@@ -4,6 +4,7 @@ include_once('conexion.php');
 $nombre =$_POST['nombres'];
 $documento =$_POST['documento'];
 
+// esto es de prueba para subir un nuevo commit
 
 $conectar=conec();
 $sql="INSERT INTO datos (nombre, documento) VALUES ('$nombre', '$documento')";  
