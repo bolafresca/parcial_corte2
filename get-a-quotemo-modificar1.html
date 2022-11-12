@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Logis Bootstrap Template - Get a Quote</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <script type="text/javascript" src="jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="cargarmunicipios.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.2.0
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="get-a-quote.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Universidad Popular del Cesar</h1>
+      </a>
+
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="get-a-quote.html">Registro</a></li>
+          <li><a href="get-a-quote-consultar.html">Consultar</a></li>
+          <li><a href="get-a-quotemo-modificar1.html">Modificar</a></li>
+          <li><a href="prueba.html">Eliminar</a></li>
+          <li><a class="get-a-quote" href="get-a-quote.html">Inicio</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Modificar</h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div><!-- End Breadcrumbs -->
+    
+    <!-- ======= Get a Quote Section ======= -->
+    <section id="get-a-quote" class="get-a-quote">
+      <div class="container " data-aos="fade-up">
+        
+        <div class="row g-0">
+          
+          <div class="col-md-10">
+              <h3>Formulario</h3>
+              <p>Ingrese su información que desea Modificar</p>
+                
+              <form id="f1" name="f1" class="w-100 shadow p-4 mb-4 bg-white border p-3 row mt-3 g-3 needs-validation " novalidate >
+
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationCustom02" required>
+                  <div class="invalid-feedback">
+                    Por favor, rellene esta campo.
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">Documento</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="invalid-feedback">
+                    Por favor, rellene esta campo.
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="validationCustom04" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" id="fechaNacimiento"class="form-control" min="1930-01-01" max="2016-12-31" required>
+                    <div class="invalid-feedback">
+                      Por favor, rellene esta campo.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <br>
+                  <label id="edad"></label>
+                  <script src="js/index.js"></script>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validationCustom09" class="form-label">Departamento</label>
+                  <select class="form-select" name="   " id="departamentos" onchange="cambia_departamento()" required>
+                    <option selected disabled value="">Elegir...</option>
+                    <option value="AMAZONAS">AMAZONAS</option>
+                    <option value="ANTIOQUIA">ANTIOQUIA</option>
+                    <option value="ARAUCA">ARAUCA</option>
+                    <option value="ATLÁNTICO">ATLÁNTICO</option>
+                    <option value="BOLÍVAR">BOLÍVAR</option>
+                    <option value="BOYACÁ">BOYACÁ</option>
+                    <option value="CALDAS">CALDAS</option>
+                    <option value="CAQUETÁ">CAQUETÁ</option>
+                    <option value="CASANARE">CASANARE</option>
+                    <option value="CAUCA">CAUCA</option>
+                    <option value="CESAR">CESAR</option>
+                    <option value="CHOCÓ">CHOCÓ</option>
+                    <option value="CÓRDOBA">CÓRDOBA</option>
+                    <option value="CUNDINAMARCA">CUNDINAMARCA</option>
+                    <option value="DISTRITO CAPITAL">DISTRITO CAPITAL</option>
+                    <option value="GUAINÍA">GUAINÍA</option>
+                    <option value="GUAVIARE">GUAVIARE</option>
+                    <option value="HUILA">HUILA</option>
+                    <option value="LA GUAJIRA">LA GUAJIRA</option>
+                    <option value="MAGDALENA">MAGDALENA</option>
+                    <option value="META">META</option>
+                    <option value="NARIÑO">NARIÑO</option>
+                    <option value="NORTE DE SANTANDER">NORTE DE SANTANDER</option>
+                    <option value="PUTUMAYO">PUTUMAYO</option>
+                    <option value="QUINDÍO">QUINDÍO</option>
+                    <option value="RISARALDA">RISARALDA</option>
+                    <option value="SAN ANDRÉS Y PROVIDENCIA">SAN ANDRÉS Y PROVIDENCIA</option>
+                    <option value="SANTANDER">SANTANDER</option>
+                    <option value="SUCRE">SUCRE</option>
+                    <option value="TOLIMA">TOLIMA</option>
+                    <option value="VALLE DEL CAUCA">VALLE DEL CAUCA</option>
+                    <option value="VAUPÉS">VAUPÉS</option>
+                    <option value="VICHADA">VICHADA</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor, rellene esta campo.
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validationCustom10" class="form-label">Ciudad</label>
+                  <select class="form-select" name=" " id="minucipios"required>
+                    <option selected disabled value="">Elegir...</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor, rellene esta campo.
+                  </div>
+                  <br>
+                </div>
+                
+                <div class="row">
+                  <label for="validationCustom03" class="form-label">Sexo:</label>
+                  <div>
+                    <input type="radio" name="radio1" id="m" value="1"onclick="habilitar(this)">
+                    <label for="m">Masculino</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="radio1" id="f" value="2"onclick="habilitar(this)">
+                    <label for="f">Femenino</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="radio1" id="o" value="3" onclick="habilitar(this)">
+                    <label for="o">Otro</label>
+                    <input type="text1"  name="o" placeholder="¿Con cuál se identifica?" class="oculto">
+                  </div>
+                  <br><br>
+                </div>
+
+                <div class="row">
+                  <label for="validationCustom05" class="form-label">Estado Civil:</label>
+                  <div>
+                    <input type="radio" name="radio2" id="s" value="1"onclick="habilitar(this)">
+                    <label for="s">Soltero</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="radio2" id="c" value="2"onclick="habilitar(this)">
+                    <label for="c">Unión libre</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="radio2" id="u" value="3" onclick="habilitar(this)">
+                    <label for="u">Casado</label>
+                    <input type="text1"  name="u" placeholder="Nombre conyuge" class="oculto">
+                  </div>
+                  <br><br>
+                </div>
+
+                <div class="row">
+                  <label for="validationCustom07" class="form-label">¿Tiene trabajo?:</label>
+                  <div>
+                    <input type="radio" name="radio3" id="si" value="1"onclick="habilitar(this)">
+                    <label for="si">Si</label>
+                    <input type="text1"  name="si" placeholder="Nombre empresa" class="oculto">
+                  </div>
+                  <div>
+                    <input type="radio" name="radio3" id="no" value="2"onclick="habilitar(this)">
+                    <label for="no">No</label>
+                  </div>
+                  <br><br>
+                </div>
+
+                <div class="row">
+                  <label for="validationCustom06" class="form-label">¿Tiene hijos?:</label>
+                  <div>
+                    <input type="radio" name="radio4" id="si1" value="1"onclick="habilitar(this)">
+                    <label for="si1">Si</label>
+                    <input type="number"  name="si1" placeholder="¿Cuántos tiene?" class="oculto">
+                  </div>
+                  <div>
+                    <input type="radio" name="radio4" id="no1" value="2"onclick="habilitar(this)">
+                    <label for="no1">No</label>
+                  </div>
+                  <br><br>
+                </div>
+
+                <div class="row">
+                  <label for="validationCustom08" class="form-label">Estrato:</label>
+                  <div>
+                    <input type="radio" name="radio4" id="1" value="1"onclick="habilitar(this)">
+                    <label for="1">1</label>
+                    <input type="text1"  name="1" value="Derecho a matricula cero" disabled class="oculto">
+                  </div>
+                  <div>
+                    <input type="radio" name="radio4" id="2" value="2"onclick="habilitar(this)">
+                    <label for="2">2</label>
+                    <input type="text1"  name="2" value="Derecho a matricula cero" disabled class="oculto">
+                  </div>
+                  <div>
+                    <input type="radio" name="radio4" id="3" value="3"onclick="habilitar(this)">
+                    <label for="3">3</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="radio4" id="4" value="4"onclick="habilitar(this)">
+                    <label for="4">4</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="radio4" id="5" value="5"onclick="habilitar(this)">
+                    <label for="5">5</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="radio4" id="6" value="6"onclick="habilitar(this)">
+                    <label for="6">6</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Modificar</button>
+                </div>
+
+                <style>
+                  .oculto {visibility:hidden;}
+                </style>
+                   
+                <script>
+                  function habilitar(e) {
+                    // los deshabilitamos todos
+                    var inputs=document.querySelectorAll("input[type=text1]");
+                    for(var i=0;i<inputs.length;i++)
+                    {
+                      inputs[i].className="oculto";
+                    }
+                   
+                    // habilitamos el seleccionado
+                    document.getElementsByName(e.id)[0].className="";
+                  }
+                </script>
+                
+              </form>
+          </div><!-- End Quote Form -->
+          <div class="col-md-2">
+            <ol>
+              <li><a href="get-a-quote.html">Registro</a></li>
+              <li><a href="get-a-quote-consultar.html">Consultar</a></li>
+              <li><a href="get-a-quotemo-modificar1.html">Modificar</a></li>
+              <li><a href="prueba.html">Eliminar</a></li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Get a Quote Section -->
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Logis</span>
+          </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+        })
+    })()
+</script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+</body>
+</html>
